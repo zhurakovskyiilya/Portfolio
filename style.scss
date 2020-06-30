@@ -1,0 +1,210 @@
+@import "null style.scss";
+
+%image{
+
+		display:inline-block;
+		width: 400px;
+		height: 200px;
+	
+}
+%mini-bloks{
+	margin: 30px 30px 0 0;
+	padding: 0px 0px 0px 0px ;
+	display: inline-block;
+	line-height: 20px;
+	width: 180px;
+	height: 100px;
+	
+}
+%left-content-temp{
+		color:#757575;
+		
+		line-height: 20px;
+	.style{
+		font-weight: bold;
+		color:#000;
+	}
+
+}
+
+
+
+body{
+	background:#ffffff;
+}
+
+.block-header {
+	max-width: 1250px;
+	height: 80px;
+	
+	
+}
+.content-buttom-info-link {
+	display: inline-block;
+				
+	
+	color:#808080;
+	&:nth-child(1){
+		padding: 20px 400px 0px 20px;
+	}
+	&:nth-child(2){
+		padding: 20px 20px 0px 0px;
+	}
+	&:nth-child(3){
+		padding: 20px 20px 0px 0px;
+	}
+	&:nth-child(4){
+		padding: 20px 20px 0px 0px;
+	}
+	&:nth-child(5){
+		padding: 20px 350px 300px 0px;
+		
+		
+	}
+
+	&:nth-child(6){
+		
+		padding: 20px 0px 0px 0px;
+
+			&:after{
+					content: '';
+					background:url('C:/Users/Натали/Desktop/WEB/Front End/2020/MAKET/img/maket img/icons/search_new.png') right no-repeat;
+					padding: 0px 30px 0px 0px;
+				}
+	}
+
+}
+
+
+		
+.content-block {
+	.title{
+	font-size: 40px;
+	padding: 40px 20px 0px 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: bold;
+		.br{
+			margin: 0 0 10px 0;
+		}
+	}
+
+	position: relative;
+	top:20px;
+	left: 150px;
+	
+	margin: 40px 0px 0px 0px;
+	max-width: 1075px;
+	height: 400px;
+	
+
+}
+.content-image-item {
+	margin: 0px 0px 0px 250px; 
+	
+
+	.block-image-one {
+		@extend %image;
+		margin: 0 10px 0 0;
+		background: url('C:/Users/Натали/Desktop/WEB/Front End/2020/MAKET/img/maket img/3.jpg') 0 0/100% 100% no-repeat;
+			&:focus{
+    		box-shadow: 0 0 10px rgba(0,0,0,0.8);
+
+			}
+	}
+
+	.block-image-two {
+		@extend %image;
+		background: url('C:/Users/Натали/Desktop/WEB/Front End/2020/MAKET/img/maket img/2.jpg') 0 0/100% 100% no-repeat;
+			&:focus{
+    		box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    		}
+		
+	}
+	
+}
+
+
+.block-left {
+	@extend %mini-bloks;
+	position: absolute;
+	top: 50px;
+	left: 470px;
+	padding: 5px 0 0 0;
+
+	&:first-line{
+		font-weight: bold;
+		color:#2a2a2a;
+	}
+	color:#757575;
+		
+}
+.block-right {
+	@extend %mini-bloks;
+	position: absolute;;
+	top:95px;
+	left:665px;
+	color:#757575;
+	
+}
+.left-content {
+	position: absolute;
+	top:200px;
+	left:30px;
+	@extend %left-content-temp;
+
+
+
+}
+
+.left-content-two {
+	position:absolute;
+	top: 300px;
+	left:30px;
+	@extend %left-content-temp;
+	
+	
+}
+.twitter {
+	position: absolute;
+	top:400px;
+	left:50px;
+}
+.fb {
+	position: absolute;
+	top:450px;
+	left:50px;
+}
+.instagram {
+	position: absolute;
+	top:500px;
+	left:50px;
+}
+
+
+
+.fotter {
+	line-height: 20px;
+	
+	max-width: 300px;
+	position: absolute;
+	top:500px;
+	left:190px;
+		.br_2{
+				margin: 0 0 20px 0;
+		}
+		&:before{
+			content: '';
+			background:url('C:/Users/Натали/Desktop/WEB/Front End/2020/MAKET/img/maket img/icons/play-button.png') left no-repeat;
+			padding: 0px 20px 0px 0px;
+		}
+}
+
+
+
+
+
+
+
+
+
+
